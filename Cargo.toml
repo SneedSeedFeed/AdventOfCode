@@ -1,0 +1,3 @@
+[workspace]
+members = [ "years/2024/Day-1-Historian-Hysteria",]
+resolver = "2"
