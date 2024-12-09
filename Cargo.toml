@@ -1,3 +1,3 @@
 [workspace]
-members = [ "years/2024/Day-1-Historian-Hysteria",]
+members = [ "years/2024/Day-1-Historian-Hysteria", "years/2024/Day-2-Red-Nosed-Reports",]
 resolver = "2"

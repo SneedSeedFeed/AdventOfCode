@@ -5,3 +5,7 @@ version = 4
 [[package]]
 name = "Day-1-Historian-Hysteria"
 version = "0.1.0"
+
+[[package]]
+name = "Day-2-Red-Nosed-Reports"
+version = "0.1.0"

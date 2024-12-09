@@ -1,6 +1,7 @@
 use std::io::Write;
 
 use part1::calc_part_one;
+use part2::calc_part_two;
 
 mod part1;
 mod part2;
@@ -43,15 +44,18 @@ const unsafe fn parse_right_num(bytes_ptr: &mut *const u8) -> u32 {
     num
 }
 
+// For day 1, I decided my challenge was to write all my logic in const functions
 fn main() {
     let stdout = std::io::stdout();
     let mut handle = stdout.lock();
+
     let start_time = std::time::Instant::now();
     let result = const { calc_part_one() };
     let part_one_time = start_time.elapsed();
     writeln!(handle, "Part One: {}\nTime: {:?}", result, part_one_time).unwrap();
+
     let start_time = std::time::Instant::now();
-    let result = const { part2::calc_part_two() };
+    let result = const { calc_part_two() };
     let part_two_time = start_time.elapsed();
     writeln!(handle, "Part Two: {}\nTime: {:?}", result, part_two_time).unwrap();
 }
