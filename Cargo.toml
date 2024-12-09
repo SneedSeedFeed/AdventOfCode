@@ -1,3 +1,6 @@
 [workspace]
-members = [ "years/2024/Day-1-Historian-Hysteria", "years/2024/Day-2-Red-Nosed-Reports",]
+members = ["years/2024/*"]
 resolver = "2"
+
+[workspace.dependencies]
+nom = "7.1.3"
